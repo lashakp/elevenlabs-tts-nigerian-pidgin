@@ -24,5 +24,5 @@ This is a Streamlit web application that uses the [ElevenLabs Text-to-Speech API
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/lashakp/elevenlabs-tts-nigerian.git
-cd elevenlabs-tts-nigerian
+git clone https://github.com/lashakp/elevenlabs-tts-nigerian-pidgin.git
+cd elevenlabs-tts-nigerian-pidgin
