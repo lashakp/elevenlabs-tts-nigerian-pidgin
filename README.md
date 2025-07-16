@@ -26,3 +26,9 @@ This is a Streamlit web application that uses the [ElevenLabs Text-to-Speech API
 ```bash
 git clone https://github.com/lashakp/elevenlabs-tts-nigerian-pidgin.git
 cd elevenlabs-tts-nigerian-pidgin
+
+custom_voices = {
+    "Fisayo": "it5NMxoQQ2INIh4XcO44",
+    "Olabisi": "eOHsvebhdtt0XFeHVMQY",
+    "timi": "yp4MmTRKvE7VXY3hUJRY"
+}
