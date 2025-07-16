@@ -39,7 +39,7 @@ voice_accents = {
 
 # -----------------  Pidgin Converter -----------------
 
-replacement = [
+Replacements = [
     
     ("i cannot understand", "i no fit understand"),
     ("i cannot speak", "i no fit talk"),
@@ -93,7 +93,7 @@ replacement = [
 ]
 
 def stylize_pidgin(text):
-    for eng, pidgin in replacements.items():
+    for eng, pidgin in Replacements:
         text = text.replace(eng, pidgin)
     return text
 
@@ -189,7 +189,7 @@ if pidgin_mode and text_input.strip():
     if show_changes:
         st.markdown("### 🔤 English ➝ Pidgin Replacements")
         changes = []
-        for eng, pidgin in replacements.items():
+        for eng, pidgin in Replacements:
             if eng in text_input:
                 changes.append(f"- `{eng}` ➝ `{pidgin}`")
         if changes:
