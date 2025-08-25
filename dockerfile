@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.13-slim
 
 WORKDIR /app
 
@@ -13,6 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the app
 COPY app.py .
+COPY secrets.toml .
+COPY .env .
 
 # Set environment variable for Streamlit config directory
 ENV STREAMLIT_CONFIG_DIR=/app/.streamlit
