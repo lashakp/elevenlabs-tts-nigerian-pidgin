@@ -122,6 +122,11 @@ def text_to_speech(text, voice_id, output_path="output.mp3"):
         return None
 
 # -----------------  Streamlit UI -----------------
+try:
+    elevenlabs_api_key = st.secrets["ELEVENLABS_API_KEY"]
+except KeyError:
+    st.error("ElevenLabs API key not found in Streamlit secrets. Please add it to your app's secrets.")
+    st.stop()
 
 st.title("🗣️ ElevenLabs TTS App with Nigerian Pidgin & Accent Filter")
 
