@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 API_KEY = st.secrets["elevenlabs"]["api_key"]
+os.environ["ELEVENLABS_API_KEY"] = API_KEY
 if not API_KEY:
     st.error("❌ API key not found. Please check your .env file.")
     st.stop()
