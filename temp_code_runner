@@ -1,0 +1,3 @@
+# test_api.py
+from utils.api import validate_api_key
+print(validate_api_key("sk_e694b5c25c110bec2d0cb1b696aafc0afe58f1eaf638292f"))
